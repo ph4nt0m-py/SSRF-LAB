@@ -6,4 +6,4 @@ Server Side Request Forgery Lab written in PHP, Individuals can practice exploit
 2. Go to the webroot directory - Example: /var/www/html
 3. Clone the repository in the web root directory
 4. Start the webserver - Example: if it is Apache then *service apache2 start*
-5. Now visit http://your_server_ip_or_domain/
+5. Now visit http://your_server_ip_or_domain/SSRF-LAB/
