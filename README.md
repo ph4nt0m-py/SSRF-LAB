@@ -1,5 +1,5 @@
 # SSRF-LAB
-Server Side Request Forgery Lab written in PHP, Individuals can practice exploiting SSRF vulnerabilities in a controlled environment. This may involve making requests to internal services, databases, or other resources that the server has access to.
+Server Side Request Forgery Lab written in PHP, Individuals can practice exploiting SSRF vulnerabilities in a controlled environment. This may involve making requests to internal services, files, different protocols, or other resources that the server has access to.
 
 # Usage/Deployment - Linux
 1. Install PHP - sudo apt-get install php
