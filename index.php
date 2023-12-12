@@ -96,7 +96,7 @@
             animation: fadeIn 1s forwards;
         }
     </style>
-    <title>SSRF Lab/Playground</title>
+    <title>SSRF Lab/Playground - By Basavaraj</title>
 </head>
 <body>
     <div class="container">
