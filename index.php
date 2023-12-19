@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +24,11 @@
             0% {
                 background-position: 0% 50%;
             }
+
             50% {
                 background-position: 100% 50%;
             }
+
             100% {
                 background-position: 0% 50%;
             }
@@ -75,8 +78,13 @@
             background-color: #45a049;
         }
 
-        .rendered-content {
+        .rendered-content-container {
             margin-top: 30px;
+            max-height: 300px; /* Set a fixed height for the container */
+            overflow: auto; /* Enable scrolling if content exceeds the container height */
+        }
+
+        .rendered-content {
             font-size: 16px;
             line-height: 1.6;
             color: #333;
@@ -86,6 +94,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -98,6 +107,7 @@
     </style>
     <title>SSRF Lab/Playground - By Basavaraj</title>
 </head>
+
 <body>
     <div class="container">
         <form action="index.php" method="post" class="animated">
@@ -116,15 +126,16 @@
                 $contents = file_get_contents($url);
 
                 if ($contents !== false) {
-                    echo '<div class="rendered-content">' . $contents . '</div>';
+                    echo '<div class="rendered-content-container"><div class="rendered-content">' . $contents . '</div></div>';
                 } else {
-                    echo '<div class="rendered-content">Error fetching URL contents</div>';
+                    echo '<div class="rendered-content-container"><div class="rendered-content">Error fetching URL contents</div></div>';
                 }
             } else {
-                echo '<div class="rendered-content">Invalid URL</div>';
+                echo '<div class="rendered-content-container"><div class="rendered-content">Invalid URL</div></div>';
             }
         }
         ?>
     </div>
 </body>
+
 </html>
